@@ -17,17 +17,17 @@ function select(el) {
 }
 function bolden() {
 	s = getSelectedTextInfo();
-	output = [s.all_text.slice(0, s.offset), "</n><b>"+s.sel_text+"</b><n> ", s.all_text.slice(s.offset+s.sel_text.length)].join('');
+	output = [" ", s.all_text.slice(0, s.offset), "</n><b>"+s.sel_text+"</b><n> ", s.all_text.slice(s.offset+s.sel_text.length)].join('');
 	s.parent.innerHTML = output;
 }
 function italicize() {
 	s = getSelectedTextInfo();
-	output = [s.all_text.slice(0, s.offset), "</n><i>"+s.sel_text+"</i><n> ", s.all_text.slice(s.offset+s.sel_text.length)].join('');
+	output = [" ", s.all_text.slice(0, s.offset), "</n><i>"+s.sel_text+"</i><n> ", s.all_text.slice(s.offset+s.sel_text.length)].join('');
 	s.parent.innerHTML = output;
 }
 function underline() {
 	s = getSelectedTextInfo();
-	output = [s.all_text.slice(0, s.offset), "</n><u>"+s.sel_text+"</u><n> ", s.all_text.slice(s.offset+s.sel_text.length)].join('');
+	output = [" ", s.all_text.slice(0, s.offset), "</n><u>"+s.sel_text+"</u><n> ", s.all_text.slice(s.offset+s.sel_text.length)].join('');
 	s.parent.innerHTML = output;
 }
 page.addEventListener("click", function() {
