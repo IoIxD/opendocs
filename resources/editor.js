@@ -1,4 +1,4 @@
-console.log("does this load");
+console.log("oh");
 var page = document.querySelector(".page"); var sel = window.getSelection();
 function getSelectedTextInfo() {
 	sel_text = new DOMParser().parseFromString(sel.toString(), 'text/html').body.textContent;
