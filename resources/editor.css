@@ -14,21 +14,22 @@ html, body {height: 100%;}
 body {background-color: #7767ab;}
 
 /* Anything that needs the main aesthetic applied to it. */
-.title, .page, .comment { background: white; border: 1px solid #111; box-shadow: 1px 1px 0 0 #222; outline: none!important;}
+.title, #editor, .comment { background: white; border: 1px solid #111; box-shadow: 1px 1px 0 0 #222; outline: none!important;}
 
 /* Page title */
 .title {font-size: 21px; width: 40%; }
 
 /* Page itself */
-.page {width: 45%; height: 95%; resize: none;} .page, .page * {font-family: "UbuntuMono", monospace!important; font-size: 15px;}	
+#editor {width: 45%; height: 95%; display: inline-block; resize: none; box-sizing:border-box; position: relative;}
+.pell-content * {font-family: "UbuntuMono", monospace!important; margin: 0px}	
 
 /* UI Buttons */
-.button {cursor: pointer; background-color: #ddd; width: 32px; height: 32px; box-shadow: 1px 1px 0 0 #222; display: block; margin: 2px 0; vertical-align: middle; font-size: 30px; text-align: center; padding: 2px; user-select: none;}
-.button img { height: 32px; width: 90%; vertical-align: middle; display: block;}
-.page, .buttons {display: inline-block; vertical-align: top;}
-.button:active {background-color: black; color: #ddd; box-shadow: none; margin-top: 3px; margin-left: 1px; margin-bottom: -1px;}
-.button:active img {filter: brightness(1500%);}
-
+.pell-button {cursor: pointer; background-color: #ddd; width: 32px; height: 32px; box-shadow: 1px 1px 0 0 #222; display: block; margin: 2px 0; vertical-align: middle; font-size: 16px; text-align: center; padding: 2px; user-select: none; border: none; color: black; text-decoration: none;}
+.pell-actionbar {position: absolute; right: -40px;}
+.pell-button:active, .pell-button-selected {background-color: black; color: #ddd; box-shadow: none; margin-top: 3px; margin-left: 1px; margin-bottom: -1px;}
+.pell-subbutton {position: relative; right: -34px; top: -34px;}
+.pell-subbutton[parent="alignments"] {top: -204px;}
+.pell-subbutton[parent="headings"] {top: -238px;}
 /* Comments*/ 
 .comment {background-color: #c3c48f; position: absolute; font-size: 19px; padding: 4px;}
 lc {border-bottom: .25vw dotted #c3c48f;}
