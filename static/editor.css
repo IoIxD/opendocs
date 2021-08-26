@@ -1,12 +1,12 @@
 /* Ubuntu Font */
-@font-face {font-family: 'Ubuntu';src:  url('../resources/font/Ubuntu-R.ttf') format('ttf');}
-@font-face {font-family: 'UbuntuBold';src:  url('../resources/font/Ubuntu-B.ttf') format('ttf');}
-@font-face {font-family: 'UbuntuItalic';src:  url('../resources/font/Ubuntu-RI.ttf') format('ttf');}
-@font-face {font-family: 'UbuntuBoldItalic';src:  url('../resources/font/Ubuntu-BI.ttf') format('ttf');}
-@font-face {font-family: 'UbuntuMono';src:  url('../resources/font/UbuntuMono-R.ttf') format('ttf');}
-@font-face {font-family: 'UbuntuMonoBold';src:  url('../resources/font/UbuntuMono-B.ttf') format('ttf');}
-@font-face {font-family: 'UbuntuMonoItalic';src:  url('../resources/font/UbuntuMono-I.ttf') format('ttf');}
-@font-face {font-family: 'UbuntuMonoBoldItalic';src:  url('../resources/font/UbuntuMono-BI.ttf') format('ttf');}
+@font-face {font-family: 'Ubuntu';src:  url('/static/font/Ubuntu-R.ttf') format('ttf');}
+@font-face {font-family: 'UbuntuBold';src:  url('/static/font/Ubuntu-B.ttf') format('ttf');}
+@font-face {font-family: 'UbuntuItalic';src:  url('/static/font/Ubuntu-RI.ttf') format('ttf');}
+@font-face {font-family: 'UbuntuBoldItalic';src:  url('/static/font/Ubuntu-BI.ttf') format('ttf');}
+@font-face {font-family: 'UbuntuMono';src:  url('/static/font/UbuntuMono-R.ttf') format('ttf');}
+@font-face {font-family: 'UbuntuMonoBold';src:  url('/static/font/UbuntuMono-B.ttf') format('ttf');}
+@font-face {font-family: 'UbuntuMonoItalic';src:  url('/static/font/UbuntuMono-I.ttf') format('ttf');}
+@font-face {font-family: 'UbuntuMonoBoldItalic';src:  url('/static/font/UbuntuMono-BI.ttf') format('ttf');}
 
 /* General */
 html, body {height: 100%;}
