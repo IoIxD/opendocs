@@ -18,6 +18,7 @@ func main() {
 		Handler:     handler,
 		ReadTimeout: 5 * time.Second,
 	}
+	handler.Start()
 	err = server.ListenAndServe()
 	if err != nil {
 		log.Fatalln(err)
